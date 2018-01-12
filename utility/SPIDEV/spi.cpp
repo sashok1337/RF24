@@ -30,9 +30,11 @@ void SPI::begin(int busNo){
      *
      * a bit messy but simple
      * */
-	char device[] = "/dev/spidev0.0";
-	device[11] += (busNo / 10) % 10;
-	device[13] += busNo % 10;
+	  char device[] = "/dev/spidev0.0";
+
+	  /* We have only one variant on H5 core */
+  	//device[11] += (busNo / 10) % 10;
+  	//device[13] += busNo % 10;
 
     if (this->fd < 0)  // check whether spi is already open
     {

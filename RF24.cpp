@@ -814,12 +814,12 @@ bool RF24::write( const void* buf, uint8_t len, const bool multicast )
 
 	//Wait until complete or failed
 	#if defined (FAILURE_HANDLING) || defined (RF24_LINUX)
-		uint32_t timer = millis();
+		unsigned long timer = millis();
 	#endif 
 	
 	while( ! ( get_status()  & ( _BV(TX_DS) | _BV(MAX_RT) ))) { 
 		#if defined (FAILURE_HANDLING) || defined (RF24_LINUX)
-			if(millis() - timer > 95){			
+			if((millis() - timer) > 95){
 				errNotify();
 				#if defined (FAILURE_HANDLING)
 				  return 0;		
