@@ -26,8 +26,8 @@
 #include <inttypes.h>
 
 #ifndef RF24_SPIDEV_SPEED
-/* 8MHz as default */
-#define RF24_SPIDEV_SPEED 8000000
+/* 8MHz is default, but after 6MHz my H5 jumps to 12MHz (tested by logic analyzer) and works with errors */
+#define RF24_SPIDEV_SPEED 6000000
 #endif
 
 class SPI {

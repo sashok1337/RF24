@@ -16,8 +16,9 @@ extern "C" {
 #include <time.h>
 #include <sys/time.h>
 
-void __msleep(int milisec);
-void __usleep(int milisec);
+void __msleep(unsigned int howLong);
+void delayMicrosecondsHard(unsigned int howLong);
+void __usleep(unsigned int howLong);
 void __start_timer();
 long __millis();
 
