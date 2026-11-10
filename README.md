@@ -5,6 +5,9 @@
 [![RP2xxx build](https://github.com/nRF24/RF24/actions/workflows/build_rp2xxx.yml/badge.svg)](https://github.com/nRF24/RF24/actions/workflows/build_rp2xxx.yml)
 [![Documentation Status](https://readthedocs.org/projects/rf24/badge/?version=latest)](https://rf24.readthedocs.io/en/latest/?badge=latest)
 
+<img width="100%" alt="RF24-header" src="https://github.com/user-attachments/assets/8c68f0b3-54f8-4ff2-b9cf-8ae19584fc0d" />
+
+
 # See http://nRF24.github.io/RF24 for all documentation
 
 ## Having problems?
